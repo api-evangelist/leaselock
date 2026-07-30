@@ -1,0 +1,45 @@
+generated: '2026-07-19'
+method: searched
+source: https://github.com/leaselock
+notes: >-
+  LeaseLock publishes no public API and therefore ships no client SDKs. The
+  packages below are the first-party open-source PostgreSQL extensions published
+  by LeaseLock engineering on their GitHub organization. They are libraries, not
+  API client libraries, so no SDKs pointer is emitted. Registry search of npm,
+  PyPI, RubyGems, NuGet, Maven Central, pkg.go.dev, Packagist and crates.io
+  returned no first-party LeaseLock client packages.
+registries_checked:
+- registry: npm
+  result: no first-party package
+- registry: pypi
+  result: 404 for leaselock
+- registry: rubygems
+  result: 404 for leaselock
+- registry: github
+  result: org github.com/leaselock, 4 public repos (2 first-party, 2 forks)
+packages:
+- language: plpgsql
+  registry: github
+  name: pgasync
+  description: PostgreSQL extension that queues SQL commands for deferred background execution via dblink.
+  url: https://github.com/leaselock/pgasync
+  install: install as a PostgreSQL extension from source (requires dblink)
+  license: BSD-3-Clause
+  official: true
+  kind: library
+- language: plpgsql
+  registry: github
+  name: pgflow
+  description: Orchestration library built on top of pgasync; runs batched commands as a DAG of stored procedures.
+  url: https://github.com/leaselock/pgflow
+  install: install as a PostgreSQL extension from source (requires pgasync + dblink)
+  license: BSD-3-Clause
+  official: true
+  kind: library
+forks:
+- name: faker.js
+  url: https://github.com/leaselock/faker.js
+  official: false
+- name: knex
+  url: https://github.com/leaselock/knex
+  official: false

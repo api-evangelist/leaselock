@@ -1,0 +1,30 @@
+generated: '2026-07-19'
+method: searched
+source: live probes of https://leaselock.com/.well-known/
+host: https://leaselock.com
+notes: >-
+  No /.well-known/ discovery documents are published. LeaseLock operates no
+  public API host — developer.leaselock.com, docs.leaselock.com, api.leaselock.com
+  and developers.leaselock.com do not resolve — so leaselock.com is the only host
+  with a probeable well-known surface. Absence recorded as valid data; no
+  WellKnown or SecurityTxt pointer is wired because nothing was found.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+unresolved_hosts:
+- developer.leaselock.com
+- developers.leaselock.com
+- docs.leaselock.com
+- api.leaselock.com
+- app.leaselock.com
+- portal.leaselock.com
+- status.leaselock.com
+- trust.leaselock.com
