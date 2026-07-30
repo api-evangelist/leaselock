@@ -1,19 +1,45 @@
 aid: leaselock
 name: LeaseLock
-description: LeaseLock is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: LeaseLock is an insurtech platform for rental housing that replaces the traditional cash
+  security deposit with lease insurance. Its Zero Deposit program embeds coverage into the lease through
+  a signed addendum, removing thousands of dollars of move-in cost for residents while protecting owners
+  and operators against unpaid rent and damage. LeaseLock Shield applies AI to ledger data, market trends
+  and lease profiles to underwrite risk, and LeaseLock Central gives property teams a portal for claims,
+  support tickets and training. Founded in 2016 and headquartered in Dallas, Texas, the company says it
+  integrates with all major property management systems, but publishes no public developer API, developer
+  portal, API reference or client SDKs — integration is arranged as a managed engagement. Its public
+  engineering output is two open-source PostgreSQL extensions, pgasync and pgflow.
 url: https://raw.githubusercontent.com/api-evangelist/leaselock/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://leaselock.com/wp-content/uploads/2024/01/multiple-modern-apartment-buildings.jpg
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - 500-global
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: profiled
+x-tier-reason: portfolio-lead-no-public-api
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Insurance
+- Insurtech
+- Real Estate
+- Rental Housing
+- Property Management
+- Risk Management
+- Financial Services
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +49,32 @@ maintainers:
 common:
 - type: Website
   url: https://leaselock.com
+- type: About
+  url: https://leaselock.com/about/
+- type: Blog
+  url: https://leaselock.com/market-insights/
+- type: BlogRSS
+  url: https://leaselock.com/feed/
+- type: Support
+  url: https://leaselock.com/contact-page/
+- type: FAQ
+  url: https://leaselock.com/how-it-works/faq/
+- type: GitHubOrganization
+  url: https://github.com/leaselock
+- type: TermsOfService
+  url: https://leaselock.com/terms-and-conditions-of-use/
+- type: PrivacyPolicy
+  url: https://leaselock.com/privacy-policy/
+- type: Compliance
+  url: https://leaselock.com/compliance/
+- type: Packages
+  url: packages/leaselock-packages.yml
+- type: LLMsTxt
+  url: llms/leaselock-llms.txt
+- type: DomainSecurity
+  url: security/leaselock-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
