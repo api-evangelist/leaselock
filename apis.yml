@@ -46,11 +46,11 @@ tags:
 - Company
 - Insurance
 - Insurtech
-- Real-Estate
+- Real Estate
 - Rental Housing
 - Property Management
 - Risk Management
-- Financial-Services
+- Financial Services
 tags_raw:
 - Company
 - Insurance
@@ -60,6 +60,8 @@ tags_raw:
 - Property Management
 - Risk Management
 - Financial Services
+- Real-Estate
+- Financial-Services
 apis: []
 maintainers:
 - FN: Kin Lane
